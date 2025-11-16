@@ -1,4 +1,6 @@
 # C++ Moules Demo
+## /!\ THIS IS A WORK IN PROGRESS!
+
 This repo is made as an introduction to the use of the [C++20 modules](https://en.cppreference.com/w/cpp/language/modules.html).
 Although modules are a part of the standards since years now, their production-ready implementation on main compilers is quite recent due to the huge rework of compiling needed. 
 

@@ -17,13 +17,18 @@ So what's the problem with headers? Well, there's a few:
  - EVERY time you ``#include`` a file, the content of this file is copy/pasted where the ``#include`` is. This makes the header compiles for each translation unit. This is slow.
  - You have no control over what symbol is publicly available and not. All macros and symbols will be imported by an ``#include``. Macros can have unexpected side effects.
  - Order of ``#include`` have an impact, especially with macros.
- - If you have two ``#includes`` declaring a symbol with the same name, they will conflict (can be avoided with namespace tho).
+ - If you have two ``#includes`` declaring a symbol with the same name, they will conflict (can be avoided with namespace).
 Modules will fix all of the above issues.
 ### So what is a module, exactly?
-A module is kind of like a translation unit.
-.ixx
+You can see a module like a translation module.
+A module is composed of a __Primary Module Interface Unit__ and one or more . .ixx
 .cppm
-
+### What can I ``export``?
+- variables
+- namespaces
+- classes
+- using declarations
+- templates
 ### II - Demo
 As an example, we can create a simple program that will return a number from a function in a module.
 We will start by 
